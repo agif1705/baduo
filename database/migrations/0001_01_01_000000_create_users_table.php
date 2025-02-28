@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->boolean('aktif');
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('image')->nullable();
             $table->string('password');
             $table->string('password_recovery');
             $table->rememberToken();
